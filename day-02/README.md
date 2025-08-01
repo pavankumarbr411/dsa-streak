@@ -1,30 +1,37 @@
-# 🔍 Day-02: Binary Search
+# ⚡ Day-02: QuickSort Algorithm
 
-- **Platform**: Offline / Custom  
 - **Date**: 2025-08-01  
-- **Difficulty**: Easy  
-- **Topic**: Binary Search, Arrays
+- **Language**: Java  
+- **Topic**: Sorting Algorithm - QuickSort  
+- **Status**: ✅ Completed
 
 ---
 
-## ✅ Problem Statement
+## 📌 Problem Statement
 
-Given a sorted array and a target element, implement Binary Search to return the index of the target. If not found, return `-1`.
+Sort an unsorted array using the **QuickSort algorithm**, a popular **divide-and-conquer** technique.
 
 ---
 
 ## 💡 Approach
 
-- Set `low = 0` and `high = n-1`.
-- Use a loop to calculate `mid = (low + high) / 2`.
-- If `arr[mid] == target`, return `mid`.
-- If `arr[mid] < target`, search in right half.
-- If `arr[mid] > target`, search in left half.
+- Choose the **last element** of the array as a pivot.
+- Partition the array such that:
+  - Elements less than the pivot come before it.
+  - Elements greater come after it.
+- Recursively apply the same logic to the subarrays on the left and right of the pivot.
 
 ---
 
-## ✍️ Notes
+## 🔍 Complexity
 
-- Time Complexity: O(log n)  
-- Space Complexity: O(1)
-- Works only on **sorted arrays**
+- **Time Complexity**:
+  - Best/Average Case: O(n log n)
+  - Worst Case: O(n²)
+- **Space Complexity**: O(log n) for recursive call stack
+
+---
+
+## 📌 Sample Output
+
+Input:  
