@@ -23,4 +23,6 @@ Like sorting playing cards in your hand:
 - **Average Case:** O(n²)  
 - **Worst Case (Reverse Sorted):** O(n²)
 
-📌 In the worst case, each element is compared with all previous elements — that’s why it becomes quadratic (n × n).
+ In the worst case, each element is compared with all previous elements — that’s why it becomes quadratic (n × n)
+ 
+
